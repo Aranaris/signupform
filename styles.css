@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -18,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -62,26 +63,45 @@ table {
     max-height: 100%;
     width: auto;
 }
-.logo-text {
+.logo-space {
     position: absolute;
     top: 20%;
     width: 100%;
-    padding: 20px 0;
     height: auto;
-    text-align: center;
-    font-size: x-large;
-    color: white;
     background-color: rgba(122, 98, 74, 0.5);
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+#chef-hat-image {
+    max-height: 100px;
+    filter: invert(100%);
+    border: 0;
+    margin-right: 20px;
+}
+
+.logo-text {
+    text-align: center;
+    font-family: 'Charm', Calibri, sans-serif;
+    font-size: xx-large;
+    color: white;
+    margin: auto 0;
 }
 #stovetop-credit {
     position: absolute;
     bottom: 10px;
     color: lightgray;
-    font-size: small;
+    font-size: x-small;
     opacity: 0.75;
     background-color: rgba(32, 30, 30, 0.5);
+    text-align: center;
     
 }
-#stovetop-credit a{
+#stovetop-credit a {
     color: lightgray;
 }
+
+/* * { 
+    border: 1px solid red; 
+} */
