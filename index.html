@@ -12,12 +12,9 @@
 </head>
 <body>
     <div id="container">
-        <div class="main-view">
-            <img src="images/laura-adai-EVpuANEtz4k-unsplash.jpg" alt="stovetop" id="stovetop-image">
+        <div class="sidebar-view">
             <div class="logo-space">
-                <div class="logo-image">
-                    <img src="images/chef-hat.png" alt="chef-icon" id="chef-hat-image">
-                </div>
+                <img src="images/chef-hat.png" alt="chef-icon" id="chef-hat-image">
                 <div class="logo-text">V's Sign-Up Form</div>
             </div>
             <div id="stovetop-credit">
@@ -28,20 +25,41 @@
         </div> 
         <div id="signup-container">
             <div id="signup-header" class="page-background">
-                Sample text for signup-header <br>
+                <h3>Sample text for signup-header <br>
                 This is a placeholder for more information on what you're signing up for!
+                </h3>
             </div>
             <div id="signup-inputs">
-                Please input your information below
-                First name
-                Last name
-                email
-                phone number
-                password
-                confirm password
+                <h3>Please input your information below</h3>
+                <form action="#" method="POST" id="signup-form">
+                    <div class="input-group">
+                        <label for="first_name">First name:</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last_name">Last name:</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="user_email">E-mail:</label>
+                        <input type="email" id="user_email" placeholder="you@example.com" required> 
+                    </div>
+                    <div class="input-group">    
+                        <label for="user_phone">Phone Number:</label>
+                        <input type="tel" id="user_phone" name="user_phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="user_password">Password:</label>
+                        <input type="password" id="user_password" name="user_password" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm_password">Confirm Password:</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </form>
             </div>
             <div id="account-creation" class="page-background">
-                <button id="create-account-button">Create Account</button>
+                <button id="create-account-button" type="submit" form="signup-form" value="Submit">Create Account</button>
                 Already have an account? Log in
             </div>
         </div>
