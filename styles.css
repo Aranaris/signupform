@@ -138,7 +138,7 @@ table {
     display: block;
     background-color: lightsalmon;
     color: #6e534b;
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 10px;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
@@ -153,20 +153,31 @@ h3 {
     padding: 20px 0;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
+#password-footnote {
+    font-size: x-small;
+    color:red;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
 input {
-    display: inline-block;
+    display: block;
     border-color: #E5E7EB;
     border-radius: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: medium;
 }
+.error {
+    border-color:red;
+}
 input:focus {
     border-color: blue;
     box-shadow: 2px 2px 5px #6e534b;
 }
+
+
 label {
     display: block;
-    font-size: medium
+    font-size: medium;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
 }
